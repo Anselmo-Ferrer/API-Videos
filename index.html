@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Api</title>
+</head>
+<body>
+
+    <header>
+        <div class="header__logo">
+            <!-- <img src="#" alt=""> -->
+            <a href="index.html"><span id="logo">Video<span id="logo__red">Page</span></span></a>
+        </div>
+        <div class="header__content">
+            <div class="header__search">
+                <input type="text" id="search" placeholder="Pesquise um video">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="add__video">
+                <button id="addVideo"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
+        <form class="add__video__content" id="addVideoForm">
+            <button id="close"><i class="fa-solid fa-xmark"></i></button>
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" placeholder="Titulo">
+            <label for="url">Url</label>
+            <input type="text" id="url" placeholder="Url">
+            <label for="imagem">Imagem</label>
+            <input type="text" id="imagem" placeholder="Imagem">
+            <button id="addBtn" type="submit">Adicionar</button>
+        </form>
+    </header>
+
+    <main>
+        <ul class="videos__container" alt="videos">
+            
+        </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
